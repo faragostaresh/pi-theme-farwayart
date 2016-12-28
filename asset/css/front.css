@@ -465,3 +465,40 @@ form .icon-question-sign {
     background-color: #3BA193;
     border-color: #3BA193;
 }
+
+/* pagination */
+.pagination > li > a,
+.pagination > li > span {
+    background-color: #EBEBEB;
+    border-color: #EBEBEB;
+}
+
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+    color: #fff;
+    background-color: #55a195;
+    border-color: #55a195;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+    color: #fff;
+    background-color: #55a195;
+    border-color: #55a195;
+}
+
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
+    background-color: #EBEBEB;
+    border-color: #EBEBEB;
+}
