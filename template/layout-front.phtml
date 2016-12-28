@@ -24,6 +24,9 @@ $this->bootstrap(array(
     'font-awesome/css/font-awesome.min.css'
 ));
 
+// Load google font
+$this->headLink()->appendStylesheet('https://fonts.googleapis.com/css?family=Amiri:400,700|Crimson+Text:400,700');
+
 // Load front.css
 $this->css($this->assetTheme('css/front.css'));
 
@@ -229,7 +232,7 @@ $breadcrumbs = $this->breadcrumb(
                     <!-- Module content ends -->
                     <?php if (isset($blocks['5']) || isset($blocks['6'])) { ?>
                         <div class="row">
-                            <div class="col-md-6 pi-zone-5">
+                            <div class="col-md-8 pi-zone-5">
                                 <?php
                                 if (isset($blocks['5'])) {
                                     foreach ($blocks['5'] as $block) {
@@ -238,7 +241,7 @@ $breadcrumbs = $this->breadcrumb(
                                 }
                                 ?>
                             </div>
-                            <div class="col-md-6 pi-zone-6">
+                            <div class="col-md-4 pi-zone-6">
                                 <?php
                                 if (isset($blocks['6'])) {
                                     foreach ($blocks['6'] as $block) {

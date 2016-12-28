@@ -6,6 +6,7 @@ html {
 
 body {
     font-size: 13px;
+    font-family: 'Amiri', serif;
 }
 
 a {
@@ -18,14 +19,17 @@ a:hover {
 
 h1 {
     font-size: 18px;
+    font-family: 'Crimson Text', serif;
 }
 
 h2, h3 {
     font-size: 16px;
+    font-family: 'Crimson Text', serif;
 }
 
 h4, h5, h6 {
     font-size: 14px;
+    font-family: 'Crimson Text', serif;
 }
 
 /* Bootstrap custom */
@@ -406,14 +410,22 @@ form .icon-question-sign {
 }
 
 /* blocks */
+.recent-post-single img,
 .news-item-block-magazine img {
     border-radius: 0;
+    padding-top: 2px;
 }
 
-.news-item-block-magazine-sub {
+.news-item-block-magazine-sub,
+.recent-post-single {
     margin-bottom: 15px;
 }
 
 .shop-block-product {
     margin: 0 -15px;
+}
+
+.recent-post-single h3 {
+    padding: 1px;
+    margin: 1px;
 }
