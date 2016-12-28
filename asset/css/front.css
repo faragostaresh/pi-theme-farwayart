@@ -10,11 +10,12 @@ body {
 }
 
 a {
-    color: #C05C23;
+    color: #af6241;
 }
 
 a:hover {
     text-decoration: none;
+    color: #55a195;
 }
 
 h1 {
@@ -428,4 +429,39 @@ form .icon-question-sign {
 .recent-post-single h3 {
     padding: 1px;
     margin: 1px;
+}
+
+/* btn */
+.btn-primary {
+    color: #fff;
+    background-color: #55a195;
+    border-color: #55a195;
+}
+.btn-primary:focus,
+.btn-primary.focus {
+    color: #fff;
+    background-color: #3BA193;
+    border-color: #3BA193;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #3BA193;
+    border-color: #3BA193;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #55a195;
+    border-color: #55a195;
+}
+.btn-success:focus,
+.btn-success.focus {
+    color: #fff;
+    background-color: #3BA193;
+    border-color: #3BA193;
+}
+.btn-success:hover {
+    color: #fff;
+    background-color: #3BA193;
+    border-color: #3BA193;
 }
