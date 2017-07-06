@@ -506,3 +506,12 @@ form .icon-question-sign {
     background-color: #EBEBEB;
     border-color: #EBEBEB;
 }
+
+/* icons */
+.widget-list-text-single-icon .fa {
+    color: #424242;
+}
+
+.widget-list-text-single-icon .fa-5x {
+    font-size: 35px;
+}
