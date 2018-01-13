@@ -395,6 +395,15 @@ form .icon-question-sign {
     margin-left: -15px;
 }
 
+.pi-section-divider {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
 /* footer */
 .pi-footer {
     padding: 15px 0;
