@@ -75,25 +75,21 @@ if (is_array($block['content'])) {
 } else {
     // Check subline
     if (!empty($block['subline'])) {
-        $heading = sprintf(
-            '<div class="pi-panel-subline">%s</div>%s',
-            $block['subline'],
-            $block['title']
-        );
+        $subLine = sprintf( '<div class="pi-panel-subline clearfix">%s</div>',$block['subline']);
     } else {
-        $heading = $block['title'];
+        $subLine = '';
     }
     // Check fullsize
     if ($block['body_fullsize']) {
         $class = sprintf('pi-block %s', $block['class']);
         if (!$block['title_hidden']) {
-            $heading = sprintf('<div class="pi-block-title"><h2>%s</h2></div>', $heading);
+            $heading = sprintf('<div class="pi-block-title"><h2>%s</h2></div>%s', $block['title'], $subLine);
         }
         $body = sprintf('<div class="pi-block-content">%s</div>', $block['content']);
     } else {
         $class = sprintf('panel panel-default %s', $block['class']);
         if (!$block['title_hidden']) {
-            $heading = sprintf('<div class="panel-heading"><h2 class="panel-title">%s</h2></div>', $heading);
+            $heading = sprintf('<div class="panel-heading"><h2 class="panel-title">%s</h2></div>%s', $block['title'], $subLine);
         }
         $body = sprintf('<div class="panel-body">%s</div>', $block['content']);
     }
