@@ -6,7 +6,7 @@ html {
 
 body {
     font-size: 15px;
-    font-family: 'Amiri', serif;
+    font-family: 'EB Garamond', serif;
 }
 
 a {
@@ -19,18 +19,19 @@ a:hover {
 }
 
 h1 {
-    font-size: 18px;
-    font-family: 'Crimson Text', serif;
+    font-size: 40px;
+    font-family: 'Italianno', cursive;
+    font-weight: bold;
 }
 
 h2, h3 {
-    font-size: 16px;
-    font-family: 'Crimson Text', serif;
+    font-size: 30px;
+    font-family: 'Italianno', cursive;
 }
 
 h4, h5, h6 {
-    font-size: 14px;
-    font-family: 'Crimson Text', serif;
+    font-size: 30px;
+    font-family: 'Italianno', cursive;
 }
 
 /* Bootstrap custom */
@@ -527,5 +528,90 @@ form .icon-question-sign {
 }
 
 .widget-list-text-single-icon .fa-5x {
-    font-size: 35px;
+    font-size: 65px;
+}
+
+/* owl */
+.owl-nav [class*='owl-'] {
+    font-size: 30px !important;
+    background: rgba(255, 255, 255, 0.9);
+    height: 40px;
+    width: 40px;
+    padding: 5px 15px 5px 15px;
+}
+
+.owl-nav [class*='owl-']:hover {
+    color: #cda04b !important;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.owl-next {
+    width: 15px;
+    height: 100px;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    display: block !important;
+}
+
+.owl-prev {
+    width: 15px;
+    height: 100px;
+    position: absolute;
+    top: 30%;
+    right: 0;
+    display: block !important;
+}
+
+.owl-carousel {
+    height: 403px !important;
+}
+
+.owl-carousel .owl-stage {
+    height: 400px !important;
+}
+
+.owl-carousel .owl-stage-outer {
+    height: 400px !important;
+}
+
+.owl-carousel .owl-item {
+    max-height: 400px !important;
+}
+
+.owl-carousel .owl-item img {
+    max-height: 300px !important;
+}
+
+.owl-carousel .owl-controls .owl-nav {
+    margin-top: -300px !important;
+}
+
+.owl-carousel .thumbnail img {
+    width: 100%;
+}
+
+/* slide */
+.carousel-caption {
+    text-align: left;
+    top: 50px;
+    width: 500px;
+    height: 150px;
+    border-radius: 4px;
+    padding: 15px;
+    background: rgba(0,0,0, 0.35);
+}
+
+.carousel-caption h4 {
+    text-align: left;
+    font-size: 30px;
+    margin: 5px 0;
+    font-family: 'Yrsa', serif;
+}
+
+.carousel-caption p {
+    text-align: left;
+    font-size: 22px;
+    margin: 5px 0;
+    font-family: 'EB Garamond', serif;
 }

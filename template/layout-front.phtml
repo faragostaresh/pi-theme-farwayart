@@ -15,8 +15,20 @@ $this->js(array(
     ),
 ));
 
+// Get module name
+$module = Pi::service('module')->current();
+
 // Load jQuery
-$this->jquery();
+if ($module == 'system') {
+    $this->jQuery([
+        'extension/owl.carousel.min.js',
+        'extension/owl.carousel.css',
+        'extension/owl.theme.default.css',
+    ]);
+} else {
+    $this->jquery();
+}
+
 
 // Load Bootstrap css/js and font-awesome
 $this->bootstrap(array(
@@ -25,10 +37,11 @@ $this->bootstrap(array(
 ));
 
 // Load google font
-$this->headLink()->appendStylesheet('https://fonts.googleapis.com/css?family=Amiri:400,700|Crimson+Text:400,700');
+$this->headLink()->appendStylesheet('https://fonts.googleapis.com/css?family=EB+Garamond|Italianno|Julius+Sans+One|Yrsa');
 
 // Load front.css
 $this->css($this->assetTheme('css/front.css'));
+$this->css($this->assetTheme('css/animate.css'));
 
 // Load localization css
 // $this->css($this->assetLocale('locale.css'));
@@ -78,9 +91,6 @@ $this->headLink(array(
 
 // Load google analytics code
 $this->ga();
-
-// Get module name
-$module = Pi::service('module')->current();
 
 // Get navigation
 $navigation = $this->nav('front');
@@ -159,19 +169,19 @@ $breadcrumbs = $this->breadcrumb(
 </header>
 <!-- Page main content: breadcrumb, flash-messenger, blocks and module content -->
 <section class="pi-section">
+    <!-- Top head zone -->
+    <?php if (!empty($blocks['0'])) { ?>
+        <div class="pi-zone-0">
+            <?php foreach ($blocks['0'] as $block) {
+                include $blockTemplate;
+            } ?>
+        </div>
+    <?php } ?>
     <div class="container-fluid">
         <div class="pi-main-container">
             <?php if ($breadcrumbs) { echo $breadcrumbs; } ?>
             <!-- Flash messenger -->
             <?php include $this->template('flash-messenger'); ?>
-            <!-- Top head zone -->
-            <?php if (!empty($blocks['0'])) { ?>
-                <div class="pi-zone-0">
-                    <?php foreach ($blocks['0'] as $block) {
-                        include $blockTemplate;
-                    } ?>
-                </div>
-            <?php } ?>
             <div class="row">
                 <!-- Left zone -->
                 <?php if (!empty($blocks['1'])) { ?>

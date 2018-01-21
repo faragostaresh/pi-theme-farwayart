@@ -4,7 +4,7 @@
         <div class="shop-block-category clearfix row">
             <div class="thumbnails">
                 <?php foreach ($block['resources'] as $category) { ?>
-                    <div class="col-xs-12 col-md-2 h-review" itemprop="itemListElement">
+                    <div class="col-xs-12 col-md-4 h-review" itemprop="itemListElement">
                         <div class="thumbnail p-item h-card">
                             <?php if ($category['image']) { ?>
                                 <a itemprop="url" class="u-url" title="<?php echo $this->escape($category['title']); ?>"
@@ -64,14 +64,14 @@
             <?php } ?>
         </ul>
     <?php } elseif ($block['type'] == 'slide') { ?>
-        <?php
+        <?php /*
         $this->jQuery(array(
             'extension/owl.carousel.min.js',
             'extension/owl.carousel.css',
         ));
         $this->css($this->assetModule('css/owl.carousel.css', 'shop'));
         $this->css($this->assetModule('css/block.css', 'shop'));
-        ?>
+        */ ?>
         <div class="shop-block-category clearfix">
             <div class="owl-carousel text-center clearfix hover-captions-container">
                 <?php foreach ($block['resources'] as $category) { ?>
