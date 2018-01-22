@@ -87,21 +87,27 @@ h4, h5, h6 {
 
 /* Block */
 .pi-block {
+    margin-top: 25px;
     margin-bottom: 20px;
 }
 
 .pi-block-title {
-    padding: 10px;
+    padding: 15px;
+    text-align: center;
 }
 
 .pi-block-title h3 {
-    font-size: 1.2em;
+    font-size: 45px;
     padding: 0;
     margin: 0;
 }
 
 .pi-panel-subline {
-    float: right;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 0;
 }
 
 .pi-panel-tab .panel-heading {
@@ -391,12 +397,9 @@ form .icon-question-sign {
     border: #fff;
 }
 
-.pi-section-full {
+.pi-section-divider {
     margin-right: -15px;
     margin-left: -15px;
-}
-
-.pi-section-divider {
     margin-top: 15px;
     margin-bottom: 15px;
     font-size: 22px;
@@ -443,6 +446,10 @@ form .icon-question-sign {
 
 .shop-block-product {
     margin: 0 -15px;
+}
+
+.shop-block-category .thumbnail h3 {
+    font-size: 35px !important;
 }
 
 .recent-post-single h3 {
@@ -591,6 +598,10 @@ form .icon-question-sign {
     width: 100%;
 }
 
+.owl-carousel .owl-item h3 {
+    font-size: 25px !important;
+}
+
 /* slide */
 .carousel-caption {
     text-align: left;
@@ -614,4 +625,76 @@ form .icon-question-sign {
     font-size: 22px;
     margin: 5px 0;
     font-family: 'EB Garamond', serif;
+}
+
+.pi-section-divider .carousel-caption {
+    text-align: center !important;
+    width: 70% !important;
+    height: auto !important;
+    top: 15% !important;
+}
+
+.pi-section-divider .carousel-caption h4 {
+    text-align: center !important;
+}
+
+/* Box */
+.box-information {
+    background: #038782;
+    border-radius: 20px;
+    padding: 40px 30px;
+    margin-bottom: 45px;
+    color: #fff;
+}
+
+.box-information-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.box-information ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.box-information ul li {
+    padding-left: 55px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.2em;
+    list-style: none;
+    position: relative;
+}
+
+.box-information ul li:before {
+    content: '1';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -9px;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    background-color: #fff;
+    color: #038782;
+    text-align: center;
+    line-height: 33px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.box-information ul li:nth-child(2):before {
+    content: '2';
+}
+
+.box-information ul li:nth-child(3):before {
+    content: '3';
+}
+
+.box-information ul li:nth-child(4):before {
+    content: '4';
+}
+
+.box-information li:nth-child(5):before {
+    content: '5';
 }
