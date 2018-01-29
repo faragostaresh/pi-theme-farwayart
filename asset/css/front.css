@@ -5,12 +5,12 @@ html {
 }
 
 body {
-    font-size: 15px;
+    font-size: 16px;
     font-family: 'EB Garamond', serif;
 }
 
 a {
-    color: #af6241;
+    color: #21249a;
 }
 
 a:hover {
@@ -105,7 +105,7 @@ h4, h5, h6 {
 .pi-panel-subline {
     text-align: center;
     width: 100%;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     padding: 15px 0;
 }
@@ -428,6 +428,21 @@ form .icon-question-sign {
     background-color: #fff;
 }
 
+.shop h1 {
+    font-size: 40px;
+    font-family: 'Yrsa', serif !important;
+}
+
+.shop h3 {
+    font-size: 25px;
+    font-family: 'Yrsa', serif !important;
+}
+
+.shop .category-width-description {
+    font-size: 20px;
+    font-family: 'Yrsa', serif !important;
+}
+
 .product-ribbon p {
     display: none !important;
 }
@@ -448,15 +463,27 @@ form .icon-question-sign {
     margin: 0 -15px;
 }
 
+.shop-block-product h3 {
+    font-size: 20px !important;
+    font-family: 'Yrsa', serif !important;
+}
+
 .shop-block-category .thumbnail h3 {
-    font-size: 35px !important;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 30px !important;
 }
 
 .recent-post-single h3 {
     padding: 1px;
     margin: 1px;
+    font-family: 'Yrsa', serif!important;
+    font-size: 20px !important;
 }
 
+.news-block .owl-carousel h3 {
+    font-family: 'Yrsa', serif!important;
+    font-size: 20px !important;
+}
 /* btn */
 .btn-primary {
     color: #fff;
@@ -530,12 +557,17 @@ form .icon-question-sign {
 }
 
 /* icons */
+.widget-list-text-single h4 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 25px !important;
+}
+
 .widget-list-text-single-icon .fa {
     color: #424242;
 }
 
 .widget-list-text-single-icon .fa-5x {
-    font-size: 65px;
+    font-size: 55px;
 }
 
 /* owl */
@@ -599,7 +631,7 @@ form .icon-question-sign {
 }
 
 .owl-carousel .owl-item h3 {
-    font-size: 25px !important;
+    font-size: 16px;
 }
 
 /* slide */
@@ -645,11 +677,17 @@ form .icon-question-sign {
     padding: 40px 30px;
     margin-bottom: 45px;
     color: #fff;
+    font-family: 'Yrsa', serif !important;
+    font-size: 16px;
 }
 
 .box-information-header {
     text-align: center;
     margin-bottom: 35px;
+}
+
+.box-information-header h2 {
+    font-size: 30px !important;
 }
 
 .box-information ul {
