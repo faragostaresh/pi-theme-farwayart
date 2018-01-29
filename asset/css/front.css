@@ -10,7 +10,7 @@ body {
 }
 
 a {
-    color: #21249a;
+    color: #038782;
 }
 
 a:hover {
@@ -19,19 +19,19 @@ a:hover {
 }
 
 h1 {
-    font-size: 40px;
-    font-family: 'Italianno', cursive;
+    font-size: 30px;
+    font-family: 'Yrsa', serif !important;
     font-weight: bold;
 }
 
 h2, h3 {
-    font-size: 30px;
-    font-family: 'Italianno', cursive;
+    font-size: 25px;
+    font-family: 'Yrsa', serif !important;
 }
 
 h4, h5, h6 {
-    font-size: 30px;
-    font-family: 'Italianno', cursive;
+    font-size: 20px;
+    font-family: 'Yrsa', serif !important;
 }
 
 /* Bootstrap custom */
@@ -398,10 +398,9 @@ form .icon-question-sign {
 }
 
 .pi-section-divider {
-    margin-right: -15px;
-    margin-left: -15px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 35px -15px !important;
+    padding-top: 35px;
+    padding-bottom: 35px;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
@@ -415,7 +414,7 @@ form .icon-question-sign {
 }
 
 .pi-footer .pi-footer-body {
-    border-top: 1px solid #ddd;
+    border-top: 1pmin-height: x solid #ddd;
     padding: 15px 0;
 }
 
@@ -447,6 +446,9 @@ form .icon-question-sign {
     display: none !important;
 }
 
+.pi-item-list .pi-item-box .caption {
+    min-height: 100px !important;
+}
 /* blocks */
 .recent-post-single img,
 .news-item-block-magazine img {
@@ -470,7 +472,7 @@ form .icon-question-sign {
 
 .shop-block-category .thumbnail h3 {
     font-family: 'Julius Sans One', sans-serif;
-    font-size: 30px !important;
+    font-size: 20px !important;
 }
 
 .recent-post-single h3 {
@@ -556,10 +558,15 @@ form .icon-question-sign {
     border-color: #EBEBEB;
 }
 
-/* icons */
+/* widget-list */
+.widget-list {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
 .widget-list-text-single h4 {
     font-family: 'Julius Sans One', sans-serif;
-    font-size: 25px !important;
+    font-size: 20px !important;
 }
 
 .widget-list-text-single-icon .fa {
@@ -660,14 +667,18 @@ form .icon-question-sign {
 }
 
 .pi-section-divider .carousel-caption {
-    text-align: center !important;
-    width: 70% !important;
+    /* text-align: center !important; */
+    width: 50% !important;
+    margin: 0 auto;
     height: auto !important;
-    top: 15% !important;
+    top: 10% !important;
+    background: none;
 }
 
 .pi-section-divider .carousel-caption h4 {
     text-align: center !important;
+    font-family: 'Italianno', serif !important;
+    font-size: 60px;
 }
 
 /* Box */
@@ -678,7 +689,7 @@ form .icon-question-sign {
     margin-bottom: 45px;
     color: #fff;
     font-family: 'Yrsa', serif !important;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .box-information-header {
@@ -688,6 +699,7 @@ form .icon-question-sign {
 
 .box-information-header h2 {
     font-size: 30px !important;
+    font-family: 'Yrsa', serif !important;
 }
 
 .box-information ul {
@@ -698,7 +710,7 @@ form .icon-question-sign {
 .box-information ul li {
     padding-left: 55px;
     margin-bottom: 30px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.2em;
     list-style: none;
     position: relative;
