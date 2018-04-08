@@ -449,6 +449,15 @@ form .icon-question-sign {
 .pi-item-list .pi-item-box .caption {
     min-height: 100px !important;
 }
+
+.productSummary {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.product-attribute {
+    font-size: 1.1em;
+}
 /* blocks */
 .recent-post-single img,
 .news-item-block-magazine img {
